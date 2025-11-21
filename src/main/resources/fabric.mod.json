@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "entsvideoplayer",
+	"version": "${version}",
+	"name": "EntsVideoPlayer",
+	"description": "A mod that allows you to play videos or GIFs right in the game with no additional software",
+	"authors": [
+		"TheFlyingEnt"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/ents-in-game-video-player",
+		"sources": "https://github.com/TheFlyingEnt/EntsInGameVideoPlayer"
+	},
+	"license": "LGPL-3.0-only",
+	"icon": "assets/EntsVideoPlayer/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.entsvideoplayer.EntsVideoPlayer"
+		],
+		"fabric-datagen": [
+			"net.entsvideoplayer.EntsVideoPlayerDataGenerator"
+		]
+	},
+	"mixins": [
+		"EntsVideoPlayer.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
