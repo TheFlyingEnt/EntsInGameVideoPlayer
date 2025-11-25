@@ -28,7 +28,7 @@ public class FFmpegNativeLoader {
     public FFmpegNativeLoader() {
         // Get mod config directory
         Path configDir = FabricLoader.getInstance().getConfigDir();
-        this.libDir = configDir.getParent().resolve("mods").resolve("entcutscene-lib");
+        this.libDir = configDir.getParent().resolve("mods").resolve("entsvideoplayer-lib");
         this.platform = detectPlatform();
         
         try {

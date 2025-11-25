@@ -18,6 +18,9 @@
 		"main": [
 			"net.entsvideoplayer.EntsVideoPlayer"
 		],
+		"client": [
+			"net.entsvideoplayer.EntsVideoPlayerClient"
+		],
 		"fabric-datagen": [
 			"net.entsvideoplayer.EntsVideoPlayerDataGenerator"
 		]

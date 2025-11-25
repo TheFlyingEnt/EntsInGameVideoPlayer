@@ -5,8 +5,8 @@ import net.minecraft.server.network.ServerPlayerEntity;
 
 public class CutsceneNetworkServer {
 
-    public static void sendCutscene(ServerPlayerEntity player, String videoPath, boolean isURL, boolean disableMovement, boolean hideHud) {
-        PlayCutscenePayload packet = new PlayCutscenePayload(videoPath, isURL, disableMovement, hideHud);
+    public static void sendCutscene(ServerPlayerEntity player, String videoPath, int type, boolean disableMovement, boolean hideHud) {
+        PlayCutscenePayload packet = new PlayCutscenePayload(videoPath, type, disableMovement, hideHud);
 
         // Send via the CustomPayload API
         ServerPlayNetworking.send(player, packet);

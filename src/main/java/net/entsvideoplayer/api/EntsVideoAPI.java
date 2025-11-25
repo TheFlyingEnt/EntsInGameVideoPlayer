@@ -12,7 +12,7 @@ public interface EntsVideoAPI {
      * Server-side helper: request that the given server player start playing the cutscene.
      * The implementation should send a S2C packet to the player.
      */
-    void requestPlayCutsceneForPlayer(ServerPlayerEntity player, String source, boolean isUrl, boolean disableMovement, boolean hideHud);
+    void requestPlayCutsceneForPlayer(ServerPlayerEntity player, String source, int type, boolean disableMovement, boolean hideHud);
 
     /**
      * @return global singleton (may be null early in init).
